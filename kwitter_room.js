@@ -19,3 +19,9 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       //End code
       });});}
 getData();
+
+function logout(){
+      user_name=document.getElementById("user_name").value;
+      localStorage.setItem("user_name",user_name);
+      window.location="index.html"
+      } 
