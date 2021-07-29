@@ -25,7 +25,7 @@ getData();
 function logout() {
       localStorage.removeItem("user_name");
       localStorage.removeItem("room_name");
-          window.location = "index.html";
+          window.location = "index.html";``
       }
       function addRoom()
       {
@@ -44,7 +44,7 @@ function logout() {
              Room_names = childKey;
              console.log("Room Name - " + Room_names);
             row = "<div class='room_name' id="+Room_names+" onclick='redirectToRoomName(this.id)' >#"+ Room_names +"</div><hr>";
-            document.getElementById("output").innerHTML += row;
+            document.getElementById("output").innerHTML+=row;
           });
         });
       
